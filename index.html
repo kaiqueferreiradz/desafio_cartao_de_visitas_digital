@@ -3,46 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <title>Kaique Ferreira</title>
 </head>
 <body>
-    <header>
-        <a href="#home">Kaique Ferreira</a>
-        <nav>
+    <header id="home" class="cabecalho">
+        <a  class="cabecalho-tutulo" href="#home">Kaique Ferreira</a>
+        <nav class="cabecalho-menu">
             <a href="#home">Home</a>
-            <a href="sobre">Sobre mim</a>
-            <a href="portifolio">Portifolio</a>
+            <a href="#sobre">Sobre mim</a>
+            <a href="#portifolio">Portifolio</a>
         </nav>
     </header>
     <main>
-        <section>
-            <img src="" alt="">
+        <section class="principal">
+            <img src="kaiquef.png" alt="">
             <div>
                 <h1>Kaique Ferreira</h1>
-                <p></p>
+                <p>Estudante de Tecnologia e Engenharia de Informação</p>
+                <div class="redes">
+                   <a href="https://www.linkedin.com/in/kaiqueferreiras/"><img src="linkedin.png" alt=""></a> 
+                   <a href="https://github.com/kaiqueferreiradz"><img src="github.png" alt=""></a>
+                </div>
             </div>
         </section>
-        <section>
+        <section id="sobre" class="sobre-mim">
             <h2>Sobre mim</h2>
-            <p>texto</p>
+            <p> Atualmente, estou cursando o Bacharelado em Ciência e Tecnologia (BC&T) com sequência em Engenharia da Informação na Universidade Federal do ABC (UFABC). Minha trajetória acadêmica é mais direcionada para Engenharia e Desenvolvimento de Software, Estruturas de Dados e um pouco em Sistemas Operacionais. Além disso, tenho formação como Técnico em Mecatrônica pelo SENAI de São Paulo, com experiência prática em mecânica, circuitos eletrônicos e desenvolvimento de sistemas embarcados. Ao longo da minha jornada profissional, tive experencias que engloba tanto o setor administrativo quanto o ecossistema de desenvolvimento de software, combinando capacidade de gestão, comunicação e forte embasamento técnico para a entrega de soluções completas.</p>
         </section>
-        <section>
+        <section id="portifolio" class="portifolio">
             <h2>Portifolio</h2>
-            <div>
-                <h3>Projeto 1</h3>
+            <div class="projeto-itens">
+                <div class="projeto-lista">
+                <div class="projeto">
+                    <img src="paises.png" alt="">
+                    <div class="projeto-titulo">
+                        <h3>API de Paises</h3>
+                    </div>
+                </div >
+                <div class="projeto">
+                    <img src="agregador.png" alt="">
+                    <div class="projeto-titulo">
+                        <h3>Agregador de links</h3>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img src="login.png" alt="">
+                    <div class="projeto-titulo">
+                        <h3>Sistema de Login</h3>
+                    </div>
+                </div>
+                <div class="projeto">
+                    <img src="listaprodutos.png" alt="">
+                    <div class="projeto-titulo">
+                        <h3>Api de Produtos</h3>
+                    </div>
+                </div>
             </div>
-            <div>
-                <h3>Projeto 2</h3>
-            </div>
-            <div>
-                <h3>Proejto 3</h3>
-            </div>
-            <div>
-                <h3>Projeto 4</h3>
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="rodape" >
         © Kaique Ferreira 2026
     </footer>
 </body>
