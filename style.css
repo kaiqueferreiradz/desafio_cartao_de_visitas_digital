@@ -59,6 +59,7 @@ body{
 .redes{
 padding: 10px;
 }
+
 .redes img{
     background-color: rgb(111, 111, 111);
     width: 30px;
@@ -69,7 +70,6 @@ padding: 10px;
 .redes img:hover{
     background-color: rgb(137, 137, 137);
 }
-
 
 .sobre-mim{
     display: flex;
@@ -165,4 +165,86 @@ padding: 10px;
     justify-content:center;
     align-items: center;
     height: 60px;
+}
+
+@media (max-width: 800px){
+
+    .cabecalho-menu{
+        display: none;
+    }
+
+    .principal{
+        flex-direction: column;
+    }
+
+    .principal img {
+        width: 90%;
+    }
+
+    .principal h1{
+        width: 90%;
+        padding-left: 5%;
+        font-size: 30px;
+    }
+
+    .principal p{
+        width: 90%;
+        padding-left: 5%;
+    }
+
+    .redes{
+        width: 90%;
+        padding-left: 5%;
+    }
+
+    .redes img{
+        width: 30px;
+        height: auto;
+    }
+
+    .sobre-mim{
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        padding-left: 0;
+        gap: 20px;
+    }
+
+    .sobre-mim p{
+        width: 90%;
+    }
+
+    .portifolio h2{
+        display: flex;
+        flex-direction:column;
+        justify-content:center;
+        align-items: center;
+        padding-left: 0;
+    }
+
+    .projeto-lista{
+        width: auto;
+    }
+
+    .projeto{
+        width: 90%;
+        height: auto;
+    }
+
+    .projeto img{
+        width: 90%;
+        margin-top: 20px;
+    }
+
+    .projeto h3{
+        padding-bottom: 10px;
+        padding-left: 10%;
+        font-size: 15px;
+    }
+
+    .cabecalho{
+        padding-left: 22px;
+        padding-right:22px;
+    }
+
 }
