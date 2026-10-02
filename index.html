@@ -14,16 +14,22 @@
             <a href="#sobre">Sobre mim</a>
             <a href="#portifolio">Portifolio</a>
         </nav>
+        <img class="menu-img" src="menu.png" alt="">
     </header>
     <main>
-        <section class="principal">
+        <section class="nav-movel" >
+            <a href="#home">Home</a>
+            <a href="#sobre">Sobre mim</a>
+            <a href="#portifolio">Portifolio</a>
+        </section>
+        <section id="bx" class="principal">
             <img src="kaiquef.png" alt="">
             <div>
                 <h1>Kaique Ferreira</h1>
                 <p>Estudante de Tecnologia e Engenharia de Informação</p>
                 <div class="redes">
-                   <a href="https://www.linkedin.com/in/kaiqueferreiras/"><img src="linkedin.png" alt=""></a> 
-                   <a href="https://github.com/kaiqueferreiradz"><img src="github.png" alt=""></a>
+                   <a target="_blank" href="https://www.linkedin.com/in/kaiqueferreiras/"><img src="linkedin.png" alt=""></a> 
+                   <a target="_blank" href="https://github.com/kaiqueferreiradz"><img src="github.png" alt=""></a>
                 </div>
             </div>
         </section>
@@ -35,25 +41,25 @@
             <h2>Portifolio</h2>
             <div class="projeto-itens">
                 <div class="projeto-lista">
-                <div class="projeto">
+                <div id="projeto1" class="projeto">
                     <img src="paises.png" alt="">
                     <div class="projeto-titulo">
                         <h3>API de Paises</h3>
                     </div>
                 </div >
-                <div class="projeto">
+                <div id="projeto2" class="projeto">
                     <img src="agregador.png" alt="">
                     <div class="projeto-titulo">
                         <h3>Agregador de links</h3>
                     </div>
                 </div>
-                <div class="projeto">
+                <div id="projeto3" class="projeto">
                     <img src="login.png" alt="">
                     <div class="projeto-titulo">
                         <h3>Sistema de Login</h3>
                     </div>
                 </div>
-                <div class="projeto">
+                <div id="projeto4" class="projeto">
                     <img src="listaprodutos.png" alt="">
                     <div class="projeto-titulo">
                         <h3>Api de Produtos</h3>
@@ -62,9 +68,25 @@
             </div>
             </div>
         </section>
+        <section class="caixa">
+            <div class="caixa-projeto-extertna" >
+                <div class="caixa-projeto">
+                    <div class="caixa-projeto-titulo">
+                        <h3 class="titulo-caixa" >Api de Produtos</h3>
+                    </div>
+                    <img src="listaprodutos.png" alt="">
+                    <a target="_blank" class="link-caixa" href="">Ver Projeto</a>
+                </div>
+                <div class="caixa-projeto">
+                    <div class="fechar-caixa" ><span> X</span></div>
+                    <p class="texto-caixa">Mussum Ipsum, cacilds vidis litro abertis.  Atirei o pau no gatis, per gatis num morreus. In elementis mé pra quem é amistosis quis leo. Interagi no mé, cursus quis, vehicula ac nisi. Quem num gosta di mim que vai caçá sua turmis!</p>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="rodape" >
         © Kaique Ferreira 2026
     </footer>
+     <script src="script.js"></script>
 </body>
 </html>

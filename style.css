@@ -5,9 +5,16 @@
     padding: 0;
     text-decoration: none;
     box-sizing: border-box;
-    background-color: black;
     color: white;
     font-family: "IBM Plex Mono", monospace;
+}
+
+html{
+    background-color: black;
+}
+
+.clicado{
+    background-color: blue;
 }
 
 body{
@@ -26,6 +33,12 @@ body{
     font-size: 18px;
 }
 
+.cabecalho img{
+    display: none;
+    width: 30px;
+    height: 30px;
+}
+
 .cabecalho-menu{
     display: flex;
     gap: 30px;
@@ -33,6 +46,24 @@ body{
 
 .cabecalho-menu a:hover{
     color: rgb(137, 137, 137);
+}
+
+.nav-movel{
+    display: none;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav-movel a{
+    padding: 10px;
+    padding-top: 0;
+    border-bottom: 0.5px solid rgb(58, 58, 59) ;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
 }
 
 .principal{
@@ -44,7 +75,6 @@ body{
     padding-bottom: 40px;
     padding-top: 20px;
     gap: 60px;
-
 }
 
 .principal img {
@@ -131,18 +161,11 @@ padding: 10px;
     justify-content:center;
     align-items: center;
     border: 0.5px solid rgb(58, 58, 59) ;
+    cursor: pointer;
 }
 
 .projeto:hover{
     background-color: rgb(26, 26, 26);
-}
-
-.projeto-titulo{
-    width: 360px;
-    display: flex;
-    flex-direction:row;
-    justify-content:flex-start;
-    background:none;
 }
 
 .projeto-titulo h3{
@@ -156,7 +179,78 @@ padding: 10px;
     height: 230px;
     height: auto;
     border-radius: 15px;
-    
+}
+
+.caixa-projeto{
+    width: 455px;
+    height: 310px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+}
+
+.caixa-projeto a{
+    padding: 10px;
+}
+.caixa-projeto a:hover{
+    color: rgb(137, 137, 137);
+}
+
+.caixa-projeto p{
+    padding-left: 10px;
+    padding-right: 20px;
+    text-align: justify;
+}
+
+.fechar-caixa{
+    position: absolute;
+    top:0;
+    width: 455px;
+    text-align: right;
+    padding: 10px;
+}
+
+.fechar-caixa span{
+    cursor: pointer;
+}
+
+.fechar-caixa{
+    position: absolute;
+    top:0;
+    width: 455px;
+    text-align: right;
+    padding: 10px;
+}
+
+.fechar-caixa span:hover{
+    color: rgb(137, 137, 137);
+}
+
+.caixa-projeto-titulo{
+    width: 360px;
+    display: flex;
+    flex-direction:row;
+    justify-content:flex-start;
+    background:none;
+    padding: 10px;
+}
+
+.caixa-projeto img{
+    width: 410px;
+    height: 230px;
+    height: auto;
+    border-radius: 15px;
+}
+
+.caixa-projeto-extertna{
+    border: 0.5px solid rgb(58, 58, 59) ;
+    display: flex;
+    flex-direction:row;
+    background-color:black ; 
+    border-radius: 15px;
+
 }
 
 .rodape{
@@ -167,7 +261,32 @@ padding: 10px;
     height: 60px;
 }
 
+.caixa{
+    display: none;
+    flex-direction: row;
+    justify-content:center;
+    position: fixed; 
+    top: 200px;          
+    z-index: 10;                
+    left: 0;
+    right: 0;
+    background: none;
+    border-radius: 15px;
+}
+
+.open{
+    display: flex;
+}
+
+.open-nav{
+    display: block;
+}
+
 @media (max-width: 800px){
+
+    .cabecalho img{
+    display: block;
+    }
 
     .cabecalho-menu{
         display: none;
@@ -238,7 +357,6 @@ padding: 10px;
 
     .projeto h3{
         padding-bottom: 10px;
-        padding-left: 10%;
         font-size: 15px;
     }
 
@@ -247,4 +365,38 @@ padding: 10px;
         padding-right:22px;
     }
 
+    .caixa{
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        top: 20px;          
+    }
+
+    .caixa-projeto-extertna{
+        width: 90%;
+        flex-direction:column;
+        border-radius: 15px;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .caixa-projeto img{
+        width: 100%;
+        height: auto;
+    }
+
+    .fechar-caixa{
+        width: 90%;
+    }
+
+    .caixa-projeto{
+        width: 90%;
+        height: auto;
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+    .caixa-projeto-titulo{
+        width: 90%;
+    }
 }
